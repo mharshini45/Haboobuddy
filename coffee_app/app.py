@@ -1,5 +1,8 @@
 import streamlit as st
 import datetime
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 def setup_page():
     st.set_page_config(
@@ -21,7 +24,7 @@ def show_header():
         
     st.title("HabooBuddy 🍵")
     st.caption("Your friendly coffee ordering app")
-    st.image("images/coffee.jpg",width=400)
+    st.image(os.path.join(BASE_DIR,"images","coffee.jpg"),width=400)
     
 def recommend_coffee():
     hour=datetime.datetime.now().hour
