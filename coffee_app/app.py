@@ -53,7 +53,7 @@ def show_menu():
 def get_order_options():
     st.subheader("🛠️ Customize Your Order")
     quantity=st.slider("How many cups 🍵? ",min_value=1,max_value=10,value=1)
-    size=st.radio("Choose size 📏",["Small","Medium","Large "])
+    size=st.radio("Choose size 📏",["Small","Medium","Large"])
     addons=st.multiselect("Add-ons ➕",["Extra-Sugar","Whipped Cream","Extra Shot","Cinnamon"])
     return quantity,size,addons
 
