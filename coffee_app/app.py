@@ -28,9 +28,9 @@ def show_header():
     
 def recommend_coffee():
     hour=datetime.datetime.now().hour
-    if hour < 11:
+    if hour <= 11:
         suggestion="Latte -🌅 a great morning pick-up"
-    elif hour < 17:
+    elif hour <= 17:
         suggestion="Mocha -☀️ a perfect afternoon refresher"
     else:
         suggestion ="Americano - 🌇 cozy evening"    
